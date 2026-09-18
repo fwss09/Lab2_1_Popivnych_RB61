@@ -1,12 +1,16 @@
+// імпортування бібліотек
 #include <stdio.h>
 #include <math.h>
 
 int main() {
+    // оголошення змінних
     double X, res;
 
+    // введення X
     printf("Enter x: ");
     scanf("%lf", &X);
 
+    // обчислення значення функції залежно від діапазону в який потрапляє Х
     if(0 <= X && X < 4) {
         res = (2*X-1)/(3*X+1);
     } else if(4 <= X && X < 12) {
@@ -17,6 +21,7 @@ int main() {
         res = 2-(X/10);
     }
 
+    // вивід результату
     printf("res: %f", res);
     return 0;
 }
